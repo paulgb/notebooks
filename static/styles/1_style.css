@@ -1,0 +1,141 @@
+/* Global tag-level stuff */
+
+body {
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+    font-family: 'PT Serif', serif;
+}
+
+.post {
+    font-size: 140%;
+}
+
+p {
+    line-height: 140%;
+}
+
+pre {
+    font-size: 70%;
+}
+
+/* Global styles */
+
+.content p.meta {
+    font-style: oblique;
+    font-size: 80%;
+    color: #999;
+    margin-top: 0;
+}
+
+/* Containers */
+
+.content {
+    margin: 0 10px;
+}
+
+/* Headers */
+
+h1 {
+    margin: 30px 0 0 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+    /*margin: 0;*/
+}
+
+h3 {
+    font-family: 'Cabin', sans-serif;
+    color: #555;
+}
+
+h1, h1 a, h1 a:hover, .nav a, .nav a:hover, .meta a, .meta a:hover, h2 a, h2 a:hover {
+    color: #511;
+}
+
+/* Links */
+
+a {
+    color: #00a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00d;
+}
+
+/* nbconvert notebook classes */
+
+.anchor-link {
+    display: none;
+}
+
+.prompt {
+    display: none;
+}
+
+.input_area, .output_text {
+    margin: 0 -20px;
+    padding: 0px 20px;
+}
+
+.output_text pre {
+    margin: 0;
+    color: #666;
+}
+
+.output_text::before {
+    content: '>';
+    position: relative;
+    left: -20px;
+    display: block;
+    height: 0;
+    width: 0;
+    font-size: 70%;
+    color: #666;
+}
+
+.input_area {
+    background-color: #ececf5;
+    border-radius: 2px;
+    overflow-x: auto;
+}
+
+code {
+    color: #600;
+}
+
+.output {
+    margin: 16px 0;
+}
+
+.cell {
+    margin: 30px 0;
+}
+
+/* Blog post / content page styles */
+
+.post {
+    margin: auto;
+    max-width: 800px;
+}
+
+.post h2 {
+    font-size: 105%;
+}
+
+.post h3 {
+    font-size: 90%;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.notice {
+    background: #cce;
+    padding: 9px;
+    font-size: 60%;
+    font-style: oblique;
+}
