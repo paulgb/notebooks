@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 ./build.py
 
 cd public

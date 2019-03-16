@@ -11,7 +11,6 @@ from traitlets.config import Config
 import nbformat
 from datetime import datetime
 
-
 IN_DIRECTORY = 'source'
 OUT_DIRECTORY = 'public'
 STYLES_DIRECTORY = 'css'

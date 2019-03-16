@@ -20,6 +20,10 @@ pre {
 
 /* Global styles */
 
+.clear {
+    clear: both;
+}
+
 .content p.meta {
     font-style: oblique;
     font-size: 80%;
@@ -33,6 +37,41 @@ pre {
     margin: 0 10px;
 }
 
+/* Page header bar and nav elements */
+
+.header > a {
+    margin: 5px 0;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.3em;
+    display: block;
+    float: left;
+    color: #dedede;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0px 1px 5px #e2e2e2;
+    padding: 2px 6px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.header ul li {
+    list-style: none;
+    float:left;
+}
+
+.header ul li a {
+    display: block;
+    padding: 7px;
+    color: #444;
+}
+
 /* Headers */
 
 h1 {
@@ -42,7 +81,6 @@ h1 {
 
 h2 {
     font-family: 'Cabin', sans-serif;
-    /*margin: 0;*/
 }
 
 h3 {
@@ -76,8 +114,8 @@ a:hover {
 }
 
 .input_area, .output_text {
-    margin: 0 -20px;
-    padding: 0px 20px;
+    margin: 0 -10px;
+    padding: 0px 10px;
 }
 
 .output_text pre {
@@ -138,4 +176,11 @@ code {
     padding: 9px;
     font-size: 60%;
     font-style: oblique;
+}
+
+@media (min-width: 840px) {
+    .input_area, .output_text {
+        margin: 0 -20px;
+        padding: 0px 20px;
+    }
 }
