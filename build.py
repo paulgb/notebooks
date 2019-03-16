@@ -12,9 +12,9 @@ import nbformat
 from datetime import datetime
 
 
-IN_DIRECTORY = 'notebooks'
+IN_DIRECTORY = 'source'
 OUT_DIRECTORY = 'public'
-STYLES_DIRECTORY = 'static/styles'
+STYLES_DIRECTORY = 'css'
 TEMPLATE_FILE = 'post.tpl'
 
 
@@ -65,12 +65,11 @@ def convert_notebooks():
             nb['metadata']['path'] = out_path
             nb['metadata']['notebook_path'] = f'/{notebook_file}'
             nb['metadata'][
-                'colab_url'] = f'https://colab.research.google.com/github/paulgb/notebooks/blob/master/notebooks/{notebook_file}'
+                'colab_url'] = f'https://colab.research.google.com/github/paulgb/notebooks/blob/master/{IN_DIRECTORY}/{notebook_file}'
             nb['metadata'][
-                'binder_url'] = f'https://mybinder.org/v2/gh/paulgb/notebooks/master?filepath={notebook_file}'
+                'binder_url'] = f'https://mybinder.org/v2/gh/paulgb/notebooks/master?filepath={IN_DIRECTORY}/{notebook_file}'
 
             (body, resources) = html_exporter.from_notebook_node(nb)
-            #    path.basename(notebook_file))
             writer.write(body, resources, notebook_name='index')
 
 

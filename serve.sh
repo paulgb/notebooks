@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./convert_notebooks.py
+./build.py
 
 cd public
 python -m http.server
