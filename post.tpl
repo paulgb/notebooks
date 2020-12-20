@@ -27,6 +27,7 @@
         }
     });
     </script>
+    <script async defer data-domain="paulbutler.org" src="https://stats.paulbutler.org/js/index.js"></script>
     <!-- End of mathjax configuration -->
 </head>
 {% endblock header %}
@@ -69,6 +70,5 @@
 {% endblock body %}
 
 {% block footer %}
-<script async defer data-domain="paulbutler.org" src="https://stats.paulbutler.org/js/index.js"></script>
 </html>
 {% endblock footer %}
