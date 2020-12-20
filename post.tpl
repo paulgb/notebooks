@@ -1,4 +1,4 @@
-{%- extends 'basic.tpl' -%}
+{%- extends 'base.html.j2' -%}
 
 {% block header %}
 <!DOCTYPE html>
